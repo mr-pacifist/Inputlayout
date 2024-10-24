@@ -26,8 +26,6 @@
       }
       
     }
-
-
   </style>
 </head>
 <body class="">
@@ -38,10 +36,11 @@
             
             <div class="col-lg-7 ">
                 <!-- drompdown  -->
-                <div class=" row my-2  py-2 rounded bg-light">
+                 <div class=" row py-2 rounded bg-light">
+                  <div class=" row  mx-auto">
                     <!--Client type drompdown  -->
                       <div class=" col-6">
-                        <select class="form-select py-1 " name="" id="" >
+                        <select class="form-select py-1 px-2 " name="" id="" >
                           <option value="">Client Type</option>
                           <option value="">Client Type 1</option>
                           <option value="">Client Type 2</option>
@@ -50,20 +49,23 @@
                           <option value="">Client Type 5</option>
                         </select>
                       </div>                   
-                  <!--SQL Query - Based client type drompdown  --> 
+                        <!--SQL Query - Based client type drompdown  --> 
                       <div class="col-6">
                           <select class="form-select py-1" name="" id="" >
                               <option value="">SQL Query-Based client type</option>
                               <option value="">Option 2</option>
                               <option value="">Option 3</option>
                               <option value="">Option 3</option>
-                          </select>
+                          </select> 
                       </div>
-                </div>
-             
-                <!-- Trend dates -->
-                <div class="row  my-2  py-2 rounded bg-light" >
-                    <h4 class="m-0">Trend Dates </h4>
+                  </div>
+                  <div class="row mx-3 mt-2">
+                    <div class="col-12 colform-check">
+                      <input type="checkbox" class="form-check-input" id="myCheckbox">
+                      <label class="form-check-label fw-bold " for="myCheckbox">Trend Dates?</label>
+                    </div>
+                  </div>
+                  <div class="" >
                     <div class="row mx-auto">
                       <div class="col-sm-6 ">
                           <label class="fw-bold py-1" for="inputName">Start Date</label>
@@ -75,7 +77,8 @@
                       </div>
                     </div>
                   </div>
-
+                 </div>
+                 
                 <!-- Trend  Previous dates -->
                 <div class="row  my-2  py-2 rounded bg-light" >
                     <h4 class="m-0">Trend-Previous Dates</h4>
